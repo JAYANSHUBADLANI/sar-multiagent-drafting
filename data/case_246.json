@@ -1,0 +1,284 @@
+{
+  "ring_id": 246,
+  "typology": "FAN-OUT",
+  "source": "IBM AML synthetic dataset (ealtman2019), HI-Small split, real labeled ring, reused from the laundering-ring-detection project in this portfolio",
+  "n_transactions": 13,
+  "n_accounts": 14,
+  "total_amount_usd_approx": 426019.32000000007,
+  "fx_note": "amount_usd_approx uses ballpark September 2022 monthly average rates, see USD_PER_UNIT in data_prep.py, not the exact rate on each transaction's date",
+  "date_range": [
+    "2022-09-07 16:17:00",
+    "2022-09-11 14:49:00"
+  ],
+  "transactions": [
+    {
+      "from_bank": 11128,
+      "from_account": "8045F4500",
+      "to_bank": 116,
+      "to_account": "80E5DE3D0",
+      "ts": "2022-09-07T16:17:00.000",
+      "amount_paid": 6954.68,
+      "currency_paid": "Swiss Franc",
+      "amount_received": 6954.68,
+      "currency_received": "Swiss Franc",
+      "payment_format": "ACH",
+      "amount_usd_approx": 7169.77
+    },
+    {
+      "from_bank": 11128,
+      "from_account": "8045F4500",
+      "to_bank": 24779,
+      "to_account": "8096D4670",
+      "ts": "2022-09-08T07:11:00.000",
+      "amount_paid": 8396.42,
+      "currency_paid": "Canadian Dollar",
+      "amount_received": 8396.42,
+      "currency_received": "Canadian Dollar",
+      "payment_format": "ACH",
+      "amount_usd_approx": 6458.78
+    },
+    {
+      "from_bank": 11128,
+      "from_account": "8045F4500",
+      "to_bank": 19729,
+      "to_account": "806475830",
+      "ts": "2022-09-08T09:11:00.000",
+      "amount_paid": 1070.46,
+      "currency_paid": "US Dollar",
+      "amount_received": 1070.46,
+      "currency_received": "US Dollar",
+      "payment_format": "ACH",
+      "amount_usd_approx": 1070.46
+    },
+    {
+      "from_bank": 11128,
+      "from_account": "8045F4500",
+      "to_bank": 121303,
+      "to_account": "808C531A0",
+      "ts": "2022-09-08T12:09:00.000",
+      "amount_paid": 270.35,
+      "currency_paid": "US Dollar",
+      "amount_received": 270.35,
+      "currency_received": "US Dollar",
+      "payment_format": "ACH",
+      "amount_usd_approx": 270.35
+    },
+    {
+      "from_bank": 11128,
+      "from_account": "8045F4500",
+      "to_bank": 18067,
+      "to_account": "8038201A0",
+      "ts": "2022-09-09T01:11:00.000",
+      "amount_paid": 13713.96,
+      "currency_paid": "Yuan",
+      "amount_received": 13713.96,
+      "currency_received": "Yuan",
+      "payment_format": "ACH",
+      "amount_usd_approx": 1973.23
+    },
+    {
+      "from_bank": 11128,
+      "from_account": "8045F4500",
+      "to_bank": 10709,
+      "to_account": "80D4EE160",
+      "ts": "2022-09-09T03:57:00.000",
+      "amount_paid": 6985.26,
+      "currency_paid": "Euro",
+      "amount_received": 6985.26,
+      "currency_received": "Euro",
+      "payment_format": "ACH",
+      "amount_usd_approx": 7055.82
+    },
+    {
+      "from_bank": 11128,
+      "from_account": "8045F4500",
+      "to_bank": 213704,
+      "to_account": "805BD1400",
+      "ts": "2022-09-09T14:51:00.000",
+      "amount_paid": 295519.18,
+      "currency_paid": "US Dollar",
+      "amount_received": 295519.18,
+      "currency_received": "US Dollar",
+      "payment_format": "ACH",
+      "amount_usd_approx": 295519.18
+    },
+    {
+      "from_bank": 11128,
+      "from_account": "8045F4500",
+      "to_bank": 8,
+      "to_account": "809D86610",
+      "ts": "2022-09-10T07:11:00.000",
+      "amount_paid": 22190.66,
+      "currency_paid": "Canadian Dollar",
+      "amount_received": 22190.66,
+      "currency_received": "Canadian Dollar",
+      "payment_format": "ACH",
+      "amount_usd_approx": 17069.74
+    },
+    {
+      "from_bank": 11128,
+      "from_account": "8045F4500",
+      "to_bank": 6625,
+      "to_account": "80DE4F560",
+      "ts": "2022-09-10T11:24:00.000",
+      "amount_paid": 15470.19,
+      "currency_paid": "Euro",
+      "amount_received": 15470.19,
+      "currency_received": "Euro",
+      "payment_format": "ACH",
+      "amount_usd_approx": 15626.45
+    },
+    {
+      "from_bank": 11128,
+      "from_account": "8045F4500",
+      "to_bank": 210997,
+      "to_account": "80C40C500",
+      "ts": "2022-09-11T07:13:00.000",
+      "amount_paid": 6242980.34,
+      "currency_paid": "Yen",
+      "amount_received": 6242980.34,
+      "currency_received": "Yen",
+      "payment_format": "ACH",
+      "amount_usd_approx": 43657.21
+    },
+    {
+      "from_bank": 11128,
+      "from_account": "8045F4500",
+      "to_bank": 22758,
+      "to_account": "808AFDDE0",
+      "ts": "2022-09-11T13:28:00.000",
+      "amount_paid": 15177.78,
+      "currency_paid": "Euro",
+      "amount_received": 15177.78,
+      "currency_received": "Euro",
+      "payment_format": "ACH",
+      "amount_usd_approx": 15331.09
+    },
+    {
+      "from_bank": 11128,
+      "from_account": "8045F4500",
+      "to_bank": 48211,
+      "to_account": "811F1C280",
+      "ts": "2022-09-11T13:50:00.000",
+      "amount_paid": 31392.03,
+      "currency_paid": "Saudi Riyal",
+      "amount_received": 31392.03,
+      "currency_received": "Saudi Riyal",
+      "payment_format": "ACH",
+      "amount_usd_approx": 8371.21
+    },
+    {
+      "from_bank": 11128,
+      "from_account": "8045F4500",
+      "to_bank": 213737,
+      "to_account": "804FDD630",
+      "ts": "2022-09-11T14:49:00.000",
+      "amount_paid": 512459.24,
+      "currency_paid": "Rupee",
+      "amount_received": 512459.24,
+      "currency_received": "Rupee",
+      "payment_format": "ACH",
+      "amount_usd_approx": 6446.03
+    }
+  ],
+  "accounts": [
+    {
+      "bank_name": "Japan Bank #179",
+      "bank_id": 210997,
+      "account": "80C40C500",
+      "entity_id": "800A8E5E0",
+      "entity_name": "Corporation #30009"
+    },
+    {
+      "bank_name": "Germany Bank #120",
+      "bank_id": 22758,
+      "account": "808AFDDE0",
+      "entity_id": "8008CDBB0",
+      "entity_name": "Partnership #26834"
+    },
+    {
+      "bank_name": "Portugal Bank #128",
+      "bank_id": 6625,
+      "account": "80DE4F560",
+      "entity_id": "8007F9590",
+      "entity_name": "Sole Proprietorship #27359"
+    },
+    {
+      "bank_name": "India Bank #15",
+      "bank_id": 213737,
+      "account": "804FDD630",
+      "entity_id": "800B12BF0",
+      "entity_name": "Corporation #30797"
+    },
+    {
+      "bank_name": "Japan Bank #52",
+      "bank_id": 11128,
+      "account": "8045F4500",
+      "entity_id": "800A71DA0",
+      "entity_name": "Sole Proprietorship #31029"
+    },
+    {
+      "bank_name": "Canada Bank #1",
+      "bank_id": 24779,
+      "account": "8096D4670",
+      "entity_id": "800CB9AC0",
+      "entity_name": "Sole Proprietorship #35096"
+    },
+    {
+      "bank_name": "Switzerland Bank #9",
+      "bank_id": 116,
+      "account": "80E5DE3D0",
+      "entity_id": "800DB93F0",
+      "entity_name": "Corporation #34854"
+    },
+    {
+      "bank_name": "Savings Bank of Phoenix",
+      "bank_id": 121303,
+      "account": "808C531A0",
+      "entity_id": "8004C2570",
+      "entity_name": "Corporation #10905"
+    },
+    {
+      "bank_name": "Italy Bank #1106",
+      "bank_id": 10709,
+      "account": "80D4EE160",
+      "entity_id": "800938830",
+      "entity_name": "Partnership #52072"
+    },
+    {
+      "bank_name": "Bank of Cleveland",
+      "bank_id": 213704,
+      "account": "805BD1400",
+      "entity_id": "800D08B90",
+      "entity_name": "Partnership #2761"
+    },
+    {
+      "bank_name": "Saudi Arabia Bank #7",
+      "bank_id": 48211,
+      "account": "811F1C280",
+      "entity_id": "800F1BC50",
+      "entity_name": "Partnership #38226"
+    },
+    {
+      "bank_name": "Heath Community Bank",
+      "bank_id": 19729,
+      "account": "806475830",
+      "entity_id": "8003B3FC0",
+      "entity_name": "Sole Proprietorship #10160"
+    },
+    {
+      "bank_name": "Canada Bank #12",
+      "bank_id": 8,
+      "account": "809D86610",
+      "entity_id": "800C52300",
+      "entity_name": "Sole Proprietorship #35296"
+    },
+    {
+      "bank_name": "China Bank #4",
+      "bank_id": 18067,
+      "account": "8038201A0",
+      "entity_id": "8009AB0F0",
+      "entity_name": "Corporation #28256"
+    }
+  ]
+}
