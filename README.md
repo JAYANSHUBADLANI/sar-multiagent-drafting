@@ -1,5 +1,7 @@
 # Does a 4 agent pipeline draft a better SAR than one agent alone
 
+[![tests](https://github.com/JAYANSHUBADLANI/sar-multiagent-drafting/actions/workflows/tests.yml/badge.svg)](https://github.com/JAYANSHUBADLANI/sar-multiagent-drafting/actions/workflows/tests.yml)
+
 A multi-agent LangGraph pipeline, retrieval, analysis, drafting, critic,
 compared against a single model doing the same job in one pass, drafting
 the narrative section of a Suspicious Activity Report for a real flagged
