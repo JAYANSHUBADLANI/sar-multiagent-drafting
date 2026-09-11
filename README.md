@@ -145,6 +145,10 @@ python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 cd src
+# data_prep.py reads the AML DuckDB file produced by the laundering-ring-detection
+# project from a sibling checkout, so it will not resolve from a fresh clone. Its
+# output is committed at data/case_246.json, so skip it and start at
+# run_experiment.py unless you are regenerating the case.
 python3 data_prep.py
 python3 run_experiment.py
 cd ..
