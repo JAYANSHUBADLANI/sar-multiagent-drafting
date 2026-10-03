@@ -20,11 +20,10 @@ run.
 
 An earlier version of this project's own ground truth compared dollar
 figures across 8 different currencies without converting them first, and
-both approaches missed the same red flag under that flawed yardstick.
-That gap traced back to my own uncorrected arithmetic, not to either
-agent's reasoning: fixed in `data_prep.py` and described in full in
-`PROGRESS.md`, since it changed the actual measured result and is worth
-being direct about rather than quietly editing away.
+both approaches missed the same red flag under that yardstick. Converting
+first removed the shared miss, so it was a ground truth problem rather than
+an agent one. The fix is in `data_prep.py` and described in `PROGRESS.md`,
+since it changed the measured result.
 
 ## The case
 
@@ -39,7 +38,7 @@ US Dollar equivalent (`amount_usd_approx` in the saved case file, ballpark
 September 2022 rates, see `src/data_prep.py`). The transfers' native
 currency amounts are not directly comparable to each other without that
 conversion, a 6,242,980.34 unit Yen transfer is only about 43,657 US
-Dollars, a mistake this project's own first pass made, see `PROGRESS.md`.
+Dollars, which changed the red flag reference, see `PROGRESS.md`.
 A real labeled ring, not a synthetic or hand written example, pulled
 directly from that project's DuckDB. See `src/data_prep.py`.
 
@@ -94,9 +93,9 @@ Dollars) as a secondary one, once the case data hands both agents the US
 Dollar equivalent directly rather than requiring either one to convert 8
 currencies itself. An earlier run, before that conversion was added, is
 the one that produced the 5 of 6 numbers in `PROGRESS.md`; the earlier
-gap traced back to my own ground truth comparing unconverted currency
+gap traced back to the ground truth comparing unconverted currency
 figures, not to a reasoning difference between the two approaches. Full
-reasoning trail, including how that was caught, in `PROGRESS.md`.
+reasoning trail in `PROGRESS.md`.
 
 ## Sharpest ways this could be wrong
 

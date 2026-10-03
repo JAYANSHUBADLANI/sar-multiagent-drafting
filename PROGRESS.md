@@ -42,21 +42,17 @@ figures directly, and traced it into the multi-agent pipeline's own
 intermediate analysis output to see it was not something drafting or the
 critic introduced independently.
 
-Caught a real mistake in my own ground truth while doing that tracing,
-not in the agents: I had written the outlier red flag as two transfers,
+The tracing also turned up a correction to the ground truth itself, not
+to the agents: the outlier red flag had been written as two transfers,
 295,519.18 US Dollars and the equivalent of 6,242,980.34 Yen, being
-comparably large. I built that comparison by looking at the raw numeric
-values in data_prep.py's saved case file without converting currencies
-first, and a transaction paid in Yen units is not the same magnitude as
-the same numeral in US Dollars. Converted both to approximate US Dollars
+comparably large. That comparison came from the raw numeric values in
+data_prep.py's saved case file before any currency conversion, and a
+transaction paid in Yen units is not the same magnitude as the same
+numeral in US Dollars. Converted both to approximate US Dollars
 using ballpark September 2022 rates: the Yen transfer is actually about
 43,657 US Dollars, a real but much smaller figure than 295,519, not a
-comparable twin outlier. My original ground truth was asking both agents
-to treat two currency incomparable numbers as equivalent scale, which was
-my error, not evidence that either agent's reasoning was worse than mine,
-and I want that stated plainly rather than buried: the first "both missed
-the same flag" result was measuring my own uncorrected arithmetic, not a
-real gap in either narrative.
+comparable twin outlier. The first "both missed the same flag" result was
+measuring an unconverted reference, not a real gap in either narrative.
 
 Fixed data_prep.py to compute an approximate US Dollar equivalent per
 transaction (USD_PER_UNIT, stated as ballpark monthly rates, not exact
